@@ -225,7 +225,7 @@ namespace EcoWarga
         public void MuatDariFile(string path)
         {
             if (!File.Exists(path)) return;
-3
+
             try
             {
                 string[] barisData = File.ReadAllLines(path);
@@ -344,20 +344,53 @@ namespace EcoWarga
                             if (ns == null) { Console.WriteLine("Nasabah tidak ditemukan!"); break; }
 
                             Console.WriteLine("Pilih Jenis Sampah (0:Plastik, 1:Kertas, 2:Logam, 3:Kaca, 4:Organik): ");
-                            JenisSampah jenis = (JenisSampah)Enum.GetValues(typeof(JenisSampah)).GetValue(int.Parse(Console.ReadLine()));
+                    
+                            JenisSampah[] pilihanJenis =
+                            {
+                            JenisSampah.Plastik,
+                            JenisSampah.Kertas,
+                            JenisSampah.Logam,
+                            JenisSampah.Kaca,
+                            JenisSampah.Organik
+                            };
+
+                            int pilihanJenisInput = int.Parse(Console.ReadLine());
+                            JenisSampah jenis = pilihanJenis[pilihanJenisInput];
 
                             Console.Write("Berat (kg): ");
-                            double berat = double.Parse(Console.ReadLine());
+                            string inputBerat = Console.ReadLine();
 
-                            LayananSampah layananBaru;
-                            if (pilihan == 2)
-                                layananBaru = new SetoranLangsung(idTx, ns, jenis, berat, DateTime.Now);
-                            else
-                                layananBaru = new PenjemputanRumah(idTx, ns, jenis, berat, DateTime.Now);
+                            try
+                            {
+                                double berat = double.Parse(inputBerat);
 
-                            pengelola.DaftarLayanan.Add(layananBaru);
-                            Console.WriteLine("Transaksi berhasil dicatat!");
-                            pengelola.LogAktivitas($"Catat transaksi {idTx} - {layananBaru.GetType().Name}");
+                                LayananSampah layananBaru;
+                                if (pilihan == 2)
+                                    layananBaru = new SetoranLangsung(idTx, ns, jenis, berat, DateTime.Now);
+                                else
+                                    layananBaru = new PenjemputanRumah(idTx, ns, jenis, berat, DateTime.Now);
+
+                                pengelola.DaftarLayanan.Add(layananBaru);
+                                Console.WriteLine("Transaksi berhasil dicatat!");
+                                layananBaru.TampilkanRingkasan(); // tambahan baris
+                                pengelola.LogAktivitas($"Catat transaksi {idTx} - {layananBaru.GetType().Name}");
+                            }
+                            catch (FormatException ex)
+                            {
+                                Console.WriteLine("Input tidak valid! Pastikan format angka benar.");
+                                pengelola.LogAktivitas($"Format Error: {ex.Message}");
+                            }
+                            catch (BeratTidakValidException ex)
+                            {
+                                Console.WriteLine($"Error Validasi Berat: {ex.Message}");
+                                pengelola.LogAktivitas(ex.Message);
+                            }
+                            catch (MinimumPenjemputanException ex)
+                            {
+                                Console.WriteLine($"Error Penjemputan: {ex.Message}");
+                                pengelola.LogAktivitas(ex.Message);
+                            }
+
                             break;
 
                         case 4:
@@ -440,4 +473,4 @@ namespace EcoWarga
             }
         }
     }
-}
+} 
