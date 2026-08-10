@@ -13,3 +13,26 @@
 [2026-08-10 10:55:04] Tambah nasabah 100302
 [2026-08-10 10:56:40] Berat sampah harus lebih dari 0 kg.
 [2026-08-10 11:00:54] Berhasil menyimpan data transaksi ke data_transaksi.txt
+[2026-08-10 11:44:48] Berhasil memuat data dari data_transaksi.txt
+[2026-08-10 11:46:30] Tambah nasabah 12
+[2026-08-10 12:02:39] Berhasil memuat data dari data_transaksi.txt
+[2026-08-10 12:02:55] Tambah nasabah 123
+[2026-08-10 12:03:15] Berat minimum penjemputan adalah 2 kg.
+[2026-08-10 12:14:42] Berhasil memuat data dari data_transaksi.txt
+[2026-08-10 12:15:47] Berhasil memuat data dari data_transaksi.txt
+[2026-08-10 12:16:57] Tambah nasabah N001
+[2026-08-10 12:17:35] Catat transaksi 20312211 - SetoranLangsung
+[2026-08-10 12:28:08] Berhasil memuat data dari data_transaksi.txt
+[2026-08-10 12:28:32] Tambah nasabah N001
+[2026-08-10 12:29:15] Catat transaksi 2031234 - SetoranLangsung
+[2026-08-10 12:32:03] Berhasil memuat data dari data_transaksi.txt
+[2026-08-10 12:33:29] Berhasil memuat data dari data_transaksi.txt
+[2026-08-10 12:33:57] Tambah nasabah N001
+[2026-08-10 12:34:38] Catat transaksi 1230234 - SetoranLangsung
+[2026-08-10 12:35:57] Tambah nasabah N002
+[2026-08-10 12:36:31] Berat minimum penjemputan adalah 2 kg.
+[2026-08-10 12:38:14] Catat transaksi 234098 - PenjemputanRumah
+[2026-08-10 12:40:59] Tambah nasabah N003
+[2026-08-10 12:41:23] Format Error: The input string 'abc' was not in a correct format.
+[2026-08-10 12:42:44] Berhasil menyimpan data transaksi ke data_transaksi.txt
+[2026-08-10 12:46:34] Berhasil memuat data dari data_transaksi.txt
