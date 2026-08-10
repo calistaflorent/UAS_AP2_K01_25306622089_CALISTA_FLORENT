@@ -1,10 +1,15 @@
-[2026-08-10 09:04:56] Tambah nasabah 061103
-[2026-08-10 09:06:04] Catat transaksi 2629061210 - SetoranLangsung
-[2026-08-10 09:07:26] Ubah status tx 2629061210 ke Selesai
-[2026-08-10 09:21:47] Berhasil memuat data dari data_transaksi.txt
-[2026-08-10 09:22:33] Tambah nasabah 010705
-[2026-08-10 09:23:58] Catat transaksi 03100552031 - SetoranLangsung
-[2026-08-10 09:25:19] Tambah nasabah 2014052031
-[2026-08-10 09:26:27] Berat sampah harus lebih dari 0 kg.
-[2026-08-10 09:28:31] Berhasil menyimpan data transaksi ke data_transaksi.txt
-[2026-08-10 09:31:05] Berhasil memuat data dari data_transaksi.txt
+[2026-08-10 10:32:17] Berhasil memuat data dari data_transaksi.txt
+[2026-08-10 10:34:27] Format Error: The input string '' was not in a correct format.
+[2026-08-10 10:34:28] Format Error: The input string '' was not in a correct format.
+[2026-08-10 10:34:28] Format Error: The input string '' was not in a correct format.
+[2026-08-10 10:34:29] Format Error: The input string '' was not in a correct format.
+[2026-08-10 10:34:29] Format Error: The input string '' was not in a correct format.
+[2026-08-10 10:43:31] Berhasil memuat data dari data_transaksi.txt
+[2026-08-10 10:44:15] Tambah nasabah 010705
+[2026-08-10 10:45:04] Catat transaksi 03100552031 - SetoranLangsung
+[2026-08-10 10:52:39] Berhasil memuat data dari data_transaksi.txt
+[2026-08-10 10:53:46] Tambah nasabah 010705
+[2026-08-10 10:54:25] Catat transaksi 03100552031 - SetoranLangsung
+[2026-08-10 10:55:04] Tambah nasabah 100302
+[2026-08-10 10:56:40] Berat sampah harus lebih dari 0 kg.
+[2026-08-10 11:00:54] Berhasil menyimpan data transaksi ke data_transaksi.txt

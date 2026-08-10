@@ -225,7 +225,7 @@ namespace EcoWarga
         public void MuatDariFile(string path)
         {
             if (!File.Exists(path)) return;
-
+3
             try
             {
                 string[] barisData = File.ReadAllLines(path);
